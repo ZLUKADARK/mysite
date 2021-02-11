@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from .models import Post
 from django.utils import timezone
 
+<<<<<<< HEAD
 
 
 
@@ -27,3 +28,7 @@ def post_new(request):
     else:
         form = PostForm()
     return render(request, 'core/post_edit.html', {'form': form})
+=======
+def post_list(request):
+    return render(request, 'core/post_list.html', {})
+>>>>>>> 4a8502e26d49c16bc3553844a31aef4c03dd1611
